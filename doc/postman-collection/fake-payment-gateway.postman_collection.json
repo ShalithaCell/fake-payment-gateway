@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "318d05da-4327-4435-a54d-fc963869a499",
+		"name": "fake-payment-gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "card",
+			"item": [
+				{
+					"name": "payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"app_name\": \"ABC\",\r\n    \"service\": \"Electronic Items\",\r\n    \"customer_email\":\"shalithax@gmail.com\",\r\n    \"card_type  \": \"VISA\",\r\n    \"card_holder_name\": \"Example\",\r\n    \"card_number\": \"4242424242424242\",\r\n    \"expiryMonth\": \"01\",\r\n    \"expiryYear\": \"2020\",\r\n    \"cvv\": \"123\",\r\n    \"amount\": \"5000.00\",\r\n    \"currency\": \"USD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/v1/payment/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5100/api/v1/payment/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"card"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "phone",
+			"item": [
+				{
+					"name": "payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"app_name\": \"ABC\",\r\n    \"service\": \"Electronic Items\",\r\n    \"customer_email\":\"shalithax@gmail.com\",\r\n    \"phone_number  \": \"0771940055\",\r\n    \"phone_holder_name\": \"shalitha\",\r\n    \"amount\": \"5000.00\",\r\n    \"currency\": \"USD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/v1/payment/phone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"phone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5100/api/v1/payment/phone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"phone"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
