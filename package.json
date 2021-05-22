@@ -1,0 +1,32 @@
+{
+  "name": "fake_payment_gateway",
+  "version": "1.0.0",
+  "description": "fake payment gateway for testing purpose",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/app.js"
+  },
+  "author": "shalitha senanayaka",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "generate-password": "^1.6.0",
+    "http-status-codes": "^2.1.4",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "nodemailer": "^6.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7",
+    "open-cli": "^6.0.1"
+  }
+}
