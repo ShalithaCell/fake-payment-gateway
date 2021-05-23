@@ -10,6 +10,7 @@
   "author": "shalitha senanayaka",
   "license": "MIT",
   "dependencies": {
+    "@koa/cors": "^3.1.0",
     "bcrypt": "^5.0.1",
     "dotenv": "^8.2.0",
     "email-validator": "^2.0.4",
